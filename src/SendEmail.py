@@ -9,7 +9,7 @@ from datetime import datetime
 from SendSMS import send_sms
 
 
-GMAIL_PASSWORD = os.environ["GMAIL_PASSWORD"]
+GMAIL_PASSWORD = os.environ.get("GMAIL_PASSWORD", "V1j@y@$@1")
 
 
 def send_mail(send_from, send_to, subject, text, files=None, username=None, password=None,
