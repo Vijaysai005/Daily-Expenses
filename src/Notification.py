@@ -44,8 +44,8 @@ def send_mail(send_from, send_to, subject, text, files=None, username=None, pass
 def main():
     current_date = datetime.now().date()
 
-    send_from = "vijay.sai005@gmail.com"
-    send_to = ["vijay.sai005@yahoo.com"]
+    send_from = "vijay.sai005@yahoo.com"
+    send_to = ["vijay.sai005@gmail.com"]
     subject = "Regd: Notification for Expense Update | {}".format(current_date)
 
     message = "\nHi Vijay,\n\nRefer link " \
@@ -58,7 +58,7 @@ def main():
     password = GMAIL_PASSWORD
     send_mail(send_from=send_from, send_to=send_to, subject=subject,
               text=message, files=files, username=username,
-              password=password, server="smtp.gmail.com:587")
+              password=password, server="smtp.mail.yahoo.com:587")
     send_sms(message)
     return
 

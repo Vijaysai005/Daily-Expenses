@@ -46,8 +46,8 @@ def main():
     current_date = datetime.now().date()
     current_month = current_date.strftime("%B")
 
-    send_from = "vijay.sai005@gmail.com"
-    send_to = ["vijay.sai005@yahoo.com"]
+    send_from = "vijay.sai005@yahoo.com"
+    send_to = ["vijay.sai005@gmail.com"]
     subject = "Regd: Monthly Expense Analysis - {}".format(current_month)
 
     message = "\nHi Vijay, \n\nPlease find the attached file for {} month expense analysis. \n\nRefer link " \
@@ -63,7 +63,7 @@ def main():
 
     send_mail(send_from=send_from, send_to=send_to, subject=subject,
               text=message, files=files, username=username,
-              password=password, server="smtp.gmail.com:587")
+              password=password, server="smtp.mail.yahoo.com:587")
 
     push_message = "\nHi Vijay, \n\nPlease check email for {} month expense analysis. \n\nRefer link " \
               "http://35.200.253.224:5000/data to " \
