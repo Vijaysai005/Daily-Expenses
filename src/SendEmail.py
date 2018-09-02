@@ -51,7 +51,7 @@ def main():
     subject = "Regd: Monthly Expense Analysis - {}".format(current_month)
 
     message = "\nHi Vijay, \n\nPlease find the attached file for {} month expense analysis. \n\nRefer link " \
-              "http://localhost:5050/data to " \
+              "http://35.200.253.224:5000/data to " \
               "insert/update data. \n\nDate: {}" \
               "\n\nRegards \n" \
               "Vijayasai S".format(current_month, current_date)
@@ -66,7 +66,7 @@ def main():
               password=password, server="smtp.gmail.com:587")
 
     push_message = "\nHi Vijay, \n\nPlease check email for {} month expense analysis. \n\nRefer link " \
-              "http://localhost:5050/data to " \
+              "http://35.200.253.224:5000/data to " \
               "insert/update data. \n\nDate: {}" \
               "\n\nRegards \n" \
               "Vijayasai S".format(current_month, current_date)

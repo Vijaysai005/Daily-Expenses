@@ -6,6 +6,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.utils import COMMASPACE, formatdate
 from datetime import datetime
+from SendSMS import send_sms
 
 GMAIL_PASSWORD = os.environ["GMAIL_PASSWORD"]
 
@@ -48,7 +49,7 @@ def main():
     subject = "Regd: Notification for Expense Update | {}".format(current_date)
 
     message = "\nHi Vijay,\n\nRefer link " \
-              "http://localhost:5050/data to " \
+              "http://35.200.253.224:5000/data to " \
               "insert/update data related to today's expenses. \n\nDate: {}" \
               "\n\nRegards \n" \
               "Vijayasai S".format(current_date)
@@ -58,6 +59,7 @@ def main():
     send_mail(send_from=send_from, send_to=send_to, subject=subject,
               text=message, files=files, username=username,
               password=password, server="smtp.gmail.com:587")
+    send_sms(message)
     return
 
 
