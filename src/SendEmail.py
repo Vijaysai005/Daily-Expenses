@@ -7,9 +7,9 @@ from email.mime.text import MIMEText
 from email.utils import COMMASPACE, formatdate
 from datetime import datetime
 from SendSMS import send_sms
+from data import PASSWORD
 
-
-GMAIL_PASSWORD = os.environ.get("GMAIL_PASSWORD", "V1j@y@$@1")
+GMAIL_PASSWORD = PASSWORD
 
 
 def send_mail(send_from, send_to, subject, text, files=None, username=None, password=None,

@@ -3,8 +3,10 @@
 from twilio.rest import Client
 import os
 
-twilio_access_id = os.environ.get("TWILIO_ACCESS_ID", "AC9f8b37202cf9778852aa54b6f0a590d6")
-twilio_auth_token = os.environ.get("TWILIO_AUTH_TOKEN", "7bdc904f7d45c72e213f0e3736f4877b")
+from data import TWILIO_ACCESS_ID, TWILIO_AUTH_TOKEN
+
+twilio_access_id = TWILIO_ACCESS_ID
+twilio_auth_token = TWILIO_AUTH_TOKEN
 
 
 def send_sms(message):
