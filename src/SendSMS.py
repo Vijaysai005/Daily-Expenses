@@ -3,6 +3,7 @@
 from twilio.rest import Client
 import os
 
+print (os.environ)
 twilio_access_id = os.environ["TWILIO_ACCESS_ID"]
 twilio_auth_token = os.environ["TWILIO_AUTH_TOKEN"]
 
