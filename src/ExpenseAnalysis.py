@@ -97,7 +97,7 @@ def analysis(filename="../Daily Expenditure - Daily Expenses.csv"):
 def generate_log():
     filename = "/tmp/analysis.log"
 
-    expenses = analysis(filename="/home/vijay/Documents/Daily-Expenses/Daily Expenditure - Daily Expenses.csv")
+    expenses = analysis(filename="/home/vijay_sai005_gmail_com/github/Daily-Expenses/src/Daily Expenditure - Daily Expenses.csv")
 
     month_analysis = expenses.get("monthly", {})
 
