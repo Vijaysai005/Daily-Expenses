@@ -1,0 +1,21 @@
+SHELL=/bin/bash
+## MAILTO=vijay.sai005@gmail.com
+## * * * * * sh /tmp/first_cron_script.sh
+
+0 17 * * * /home/vijay_sai005_gmail_com/github/Daily-Expenses/venv/bin/python3 /home/vijay_sai005_gmail_com/github/Daily-Expenses/GenerateLog.py &> /tmp/log.txt
+0 18 * * * /home/vijay_sai005_gmail_com/github/Daily-Expenses/venv/bin/python3 /home/vijay_sai005_gmail_com/github/Daily-Expenses/SendEmail.py &> /tmp/log_mail.txt
+
+0 21 * * * /home/vijay_sai005_gmail_com/github/Daily-Expenses/venv/bin/python3 /home/vijay_sai005_gmail_com/github/Daily-Expenses/GenerateLog.py &> /tmp/log.txt
+0 22 * * * /home/vijay_sai005_gmail_com/github/Daily-Expenses/venv/bin/python3 /home/vijay_sai005_gmail_com/github/Daily-Expenses/SendEmail.py &> /tmp/log_mail.txt
+
+0 */4 * * * /home/vijay_sai005_gmail_com/github/Daily-Expenses/venv/bin/python3 /home/vijay_sai005_gmail_com/github/Daily-Expenses/Notification.py &> /tmp/log_notification.txt
+
+
+
+* * * * * /home/vijay_sai005_gmail_com/github/Daily-Expenses/venv/bin/python3 /home/vijay_sai005_gmail_com/github/Daily-Expenses/GenerateLog.py &> /tmp/log.txt
+* * * * * /home/vijay_sai005_gmail_com/github/Daily-Expenses/venv/bin/python3 /home/vijay_sai005_gmail_com/github/Daily-Expenses/SendEmail.py &> /tmp/log_mail.txt
+
+* * * * * /home/vijay_sai005_gmail_com/github/Daily-Expenses/venv/bin/python3 /home/vijay_sai005_gmail_com/github/Daily-Expenses/GenerateLog.py &> /tmp/log.txt
+* * * * * /home/vijay_sai005_gmail_com/github/Daily-Expenses/venv/bin/python3 /home/vijay_sai005_gmail_com/github/Daily-Expenses/SendEmail.py &> /tmp/log_mail.txt
+
+* * * * * /home/vijay_sai005_gmail_com/github/Daily-Expenses/venv/bin/python3 /home/vijay_sai005_gmail_com/github/Daily-Expenses/Notification.py &> /tmp/log_notification.txt

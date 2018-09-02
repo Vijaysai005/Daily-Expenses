@@ -9,6 +9,7 @@ from datetime import datetime
 
 GMAIL_PASSWORD = os.environ["GMAIL_PASSWORD"]
 
+
 def send_mail(send_from, send_to, subject, text, files=None, username=None, password=None,
               server="127.0.0.1"):
     assert isinstance(send_to, list)
