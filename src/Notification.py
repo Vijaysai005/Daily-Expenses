@@ -50,7 +50,7 @@ def main():
     subject = "Regd: Notification for Expense Update | {}".format(current_date)
 
     message = "\nHi Vijay,\n\nRefer link " \
-              "http://35.200.253.224:5000/data to " \
+              "http://35.200.231.68:5000/data to " \
               "insert/update data related to today's expenses. \n\nDate: {}" \
               "\n\nRegards \n" \
               "Vijayasai S".format(current_date)
